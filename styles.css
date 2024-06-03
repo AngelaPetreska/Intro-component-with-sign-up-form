@@ -114,7 +114,27 @@ button:focus {
     color: hsl(228, 45%, 44%); 
 }
 
-@media (max-width: 992px) {
+.error {
+    border: 2px soild hsl(0, 100%, 74%);
+    background: url(./images/icon-error.svg) no-repeat;
+    background-position: 95% 50%;
+}
+
+.error-text {
+    font-size: 12px;
+    font-style: italic;
+    margin-left: auto;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    color: hsl(0, 100%, 74%);
+}
+
+.sucess {
+    border: 2px solid hsl(154, 59%, 51%);
+
+}
+
+@media (max-width: 768px) {
     main {
         padding: 40px 20px;
         flex-direction: column;
