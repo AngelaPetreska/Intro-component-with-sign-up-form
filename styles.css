@@ -131,7 +131,6 @@ button:focus {
 
 .sucess {
     border: 2px solid hsl(154, 59%, 51%);
-
 }
 
 @media (max-width: 768px) {

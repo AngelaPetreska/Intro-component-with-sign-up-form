@@ -27,7 +27,7 @@ form.addEventListener('submit', e =>  {
     if(emailValue === '') {
         errorFunc(email, 'Email field cannot be empty' )
     } else if (!emailValue.match(pattern)) {
-        errorFunc(email, 'Looks like an invalid email')
+        errorFunc(email, 'Looks like this is not an email')
     }
     else {
         successFunc(email)
