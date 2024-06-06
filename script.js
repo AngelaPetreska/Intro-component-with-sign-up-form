@@ -40,19 +40,19 @@ form.addEventListener('submit', e =>  {
     }
 });
 
-function errorFunc(req, message) {
-    const formControl = req.parentElement;
+function errorFunc(required, message) {
+    const formControl = required.parentElement;
     const span = formControl.querySelector('span');
     span.innerText = message;
-    req.classList.add('error');
+    required.classList.add('error');
     span.classList.add('error-text');
-    if (req !== email) {
-        req.value = '';
+    if (required !== email) {
+        required.value = '';
     } else {
-        req.style.color = "hsl(0, 100%, 74%)";
+        required.style.color = "hsl(0, 100%, 74%)";
     }
 }
 
 function successFunc(req) {
-    req.classList.add('success');
+    required.classList.add('success');
 }
